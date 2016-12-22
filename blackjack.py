@@ -17,8 +17,8 @@ def sumPoints(playerCards):
     aces = sum(card.count('Ace') for card in playerCards)
     
     while total > 21 and aces:
-        total += 10
-        aces += 1
+        total -= 10
+        aces -= 1
     
     return total
     
