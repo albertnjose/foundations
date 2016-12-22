@@ -65,7 +65,7 @@ elif(dealerPoints == 21):
 
 # Player logic
 while playerPoints < 21:
-    game = input('Hit: 1 or Stay: 2?')
+    game = int(input('Hit: 1 or Stay: 2?'))
     
     if(game not in [1, 2]):
         print("Please input 1 or 2.")
